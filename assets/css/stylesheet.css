@@ -44,6 +44,16 @@
     padding-right: 1%;
   }
 
+  a:hover {
+    text-decoration: none;
+    color: var(--secondarytheme-color);
+  }
+  a:visited {
+    text-decoration: none;
+    color: var(--secondarytheme-color);
+  }
+  
+
   main {
       display: flex;
       flex-wrap: wrap;
