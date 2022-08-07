@@ -119,10 +119,21 @@
       text-align: center;
     }
 
-    #work {
+    main section #work {
       float: left;
       width: 50%
     }
+
+    .first-project {
+      position: relative;
+    }
+
+    #horiseon-refactor {
+      height: 20%;
+      width: 20%
+
+    }
+    
 
     #resume {
       float: right;
