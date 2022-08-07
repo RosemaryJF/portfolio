@@ -6,11 +6,10 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
   body {
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -19,7 +18,7 @@
 
   body a {
     text-decoration: none;
-    color: var(--maintheme-color);
+    color: var(--secondarytheme-color);
   }
 
   body a:visited {
@@ -101,6 +100,8 @@
     }
     
     main section {
+      display: inline-block;
+      width: 100%;
       background-color: var(--thirdtheme-color);
       padding: 20px;
       border: 10px solid #487063;
@@ -114,19 +115,45 @@
       padding-bottom: .25%;
     }
 
-    #card-float-left {
+    main section p {
+      text-align: center;
+    }
+
+    #work {
       float: left;
       width: 50%
     }
 
-    #card-float-right {
+    #resume {
       float: right;
       width: 50%;
     }
+  
+  footer {
+    background-color: var(--maintheme-color);
+    height: 40%;
+    border-top: 10px solid var(--secondarytheme-color);
+  }
 
-    main ul .contact-me {
-      list-style: none;
-    }
+  footer h2 {
+    color: var(--thirdtheme-color);
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 0.25%;
+  }
+
+  footer ul {
+    text-align: center;
+    list-style: none;
+    margin: 2% 2% 2% 0;
+  }
+
+  footer ul li {
+    display: inline-block;
+    color: var(--secondarytheme-color);
+    font-weight: 700;
+    padding-bottom: 1%;
+  }
 
   @media screen and (max-width: 992px) {
    #card {
