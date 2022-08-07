@@ -16,6 +16,20 @@
     justify-content: flex-start;
   }
 
+  body a {
+    text-decoration: none;
+    color: var(--maintheme-color);
+  }
+  body a:hover {
+    text-decoration: none;
+    color: var(--secondarytheme-color);
+  }
+
+  body a:visited {
+    text-decoration: underline;
+    color: var(--secondarytheme-color);
+  }
+
   header {
     background-color: var(--maintheme-color);
     height: 50%;
@@ -23,7 +37,7 @@
   }
 
   header h1 {
-    color: #fff;
+    color: #f6f7eb;
     font-weight: bold;
     font-size: xx-large;
     text-align: right;
@@ -39,7 +53,7 @@
 
   header nav ul li {
     display: inline-block;
-    color: #fff;
+    color: #f6f7eb;
     font-weight: 700;
     padding-right: 1%;
   }
@@ -50,15 +64,14 @@
     text-transform: lowercase;
   }
 
-  a:hover {
-    text-decoration: none;
-    color: var(--secondarytheme-color);
-  }
-
-  a:visited {
-    text-decoration: underline;
-    color: var(--secondarytheme-color);
-  }
+  .hero-image {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/SpainLove.png");
+    background-size: cover;
+    background-position: center;
+}
   
   aside {
     float: left;
@@ -77,12 +90,11 @@
     display: flex;
     flex-wrap: wrap;      
     justify-content: space-around;
-    float: right;
     }
     
     section {
       display: flex;
-      background-color: #fff;
+      background-color: #f6f7eb;
       padding: 20px;
       border: 10px solid #487063;
       margin: 2%;
@@ -94,24 +106,24 @@
       font-weight: bold;
     }
 
-    .card-float-left {
+    #card-float-left {
       float: left;
       width: 50%
     }
 
-    .card-float-right {
+    #card-float-right {
       float: right;
       width: 50%;
     }
 
   @media screen and (max-width: 992px) {
-   .card {
+   #card {
       width: 50%
    }
   }
   
   @media screen and (max-width: 768px) {
-    .card {
+    #card {
       width: 100%
     }
   }
