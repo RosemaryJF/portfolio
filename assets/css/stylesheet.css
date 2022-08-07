@@ -62,8 +62,7 @@
   
   aside {
     float: left;
-    width: 100%;
-    position: relative;
+    width: 100%
   }
 
   img {
@@ -82,7 +81,7 @@
     }
     
     section {
-      flex: 0 0 300px;
+      display: flex;
       background-color: #fff;
       padding: 20px;
       border: 10px solid #487063;
@@ -95,9 +94,19 @@
       font-weight: bold;
     }
 
+    .card-float-left {
+      float: left;
+      width: 50%
+    }
+
+    .card-float-right {
+      float: right;
+      width: 50%;
+    }
+
   @media screen and (max-width: 992px) {
    .card {
-    width: 50%
+      width: 50%
    }
   }
   
