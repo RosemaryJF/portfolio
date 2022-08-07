@@ -20,10 +20,6 @@
     text-decoration: none;
     color: var(--maintheme-color);
   }
-  body a:hover {
-    text-decoration: none;
-    color: var(--secondarytheme-color);
-  }
 
   body a:visited {
     text-decoration: underline;
