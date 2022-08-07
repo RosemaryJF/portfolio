@@ -9,6 +9,7 @@
   }
   
   body {
+    box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     display: flex;
@@ -35,7 +36,7 @@
   header h1 {
     color: var(--thirdtheme-color);
     font-weight: bold;
-    font-size: 300%;
+    font-size: 250%;
     text-align: left;
     margin: 1% 2% 0 1%;
   }
@@ -44,7 +45,6 @@
     text-align: right;
     list-style: none;
     margin: 2% 2% 2% 0;
-    
   }
 
   header nav ul li {
@@ -70,21 +70,28 @@
 }
   
   aside {
-    box-sizing: border-box;
-    float: center;
-    width: 100%;
-    position: relative;
+    background-color: var(--thirdtheme-color);
+    padding: 1%;
+    border: 10px solid #487063;
+    margin: 2%;
   }
 
   aside h2 {
-    position: absolute;
-    justify-content: center;
+    text-align: center;
+    color: var(--maintheme-color);
+    text-decoration: underline solid var(--secondarytheme-color);
   }
 
-  img {
-    display: block;
-    height: 20%;
-    width: 20%;
+  aside p {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  aside img {
+    float: left;
+    width: 25%;
+    object-fit: cover;
   }
 
   main {
@@ -93,18 +100,18 @@
     justify-content: space-around;
     }
     
-    section {
-      display: flex;
+    main section {
       background-color: var(--thirdtheme-color);
       padding: 20px;
       border: 10px solid #487063;
       margin: 2%;
     }
 
-    section h2 {
+    main section h2 {
       text-align: center;
       text-decoration: underline var(--secondarytheme-color);
       font-weight: bold;
+      padding-bottom: .25%;
     }
 
     #card-float-left {
@@ -115,6 +122,10 @@
     #card-float-right {
       float: right;
       width: 50%;
+    }
+
+    main ul .contact-me {
+      list-style: none;
     }
 
   @media screen and (max-width: 992px) {
