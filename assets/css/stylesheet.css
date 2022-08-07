@@ -45,14 +45,24 @@
   }
 
   main {
-    height: 
-  }
-  #about {
-    justify-content: flex-start;
-    height: 100%;
-    width: 25%;
-    border: 10px solid #497063;
-  }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    section {
+      flex: 0 0 300px;
+      background-color: #fff;
+      padding: 20px;
+      border: 10px solid #487063;
+      margin: 2%;
+    }
+
+    section h2 {
+      text-align: center;
+      text-decoration: underline var(--secondarytheme-color);
+      font-weight: bold;
+    }
 
   @media screen and (max-width: 992px) {
    .card {
