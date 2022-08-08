@@ -114,6 +114,7 @@ body {
     main section {
       display: inline-block;
       width: 100%;
+      height: 500px;
       background-color: var(--thirdtheme-color);
       padding: 20px;
       border: 10px solid #487063;
@@ -146,10 +147,11 @@ body {
     
     .first-project {
       position: absolute;
+      left: 40%;
+      bottom: 50%;
       margin-bottom: .25%;
       background-image: url("../images/digital-marketing-meeting.jpg");
       background-size: cover;
-      background-position: left;
     }
   
   footer {
