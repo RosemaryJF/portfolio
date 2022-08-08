@@ -5,40 +5,41 @@
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
   }
   
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    min-height: 100vh;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
   }
 
   header {
     background-color: var(--maintheme-color);
-    height: 50%;
+    height: 12rem;
     position: relative;
   }
 
   header h1 {
     color: var(--thirdtheme-color);
-    font-weight: bold;
-    font-size: 200%;
-    text-align: left;
     padding: 1%;
-    margin: 0;
-    
+    margin: 1% 0 0 0;
   }
 
-  header .my-photo  {
+  header .container  {
     background-image: url("../images/my-photo-spain.png");
-    position: absolute;
     border-radius: 50%;
-    height: 180px;
-    width: 200px;
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    top: 7%;
+    left: 75%;
     
-
   }  
+
+  header .clearfix {
+    overflow: auto;
+  }
 
   nav {
     background-color: var(--secondarytheme-color);
