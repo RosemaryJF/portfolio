@@ -17,6 +17,7 @@
   header {
     background-color: var(--maintheme-color);
     height: 50%;
+    position: relative;
   }
 
   header h1 {
@@ -26,7 +27,18 @@
     text-align: left;
     padding: 1%;
     margin: 0;
+    
   }
+
+  header .my-photo  {
+    background-image: url("../images/my-photo-spain.png");
+    position: absolute;
+    border-radius: 50%;
+    height: 180px;
+    width: 200px;
+    
+
+  }  
 
   nav {
     background-color: var(--secondarytheme-color);
@@ -90,16 +102,7 @@
   aside p {
     flex-wrap: wrap;
     text-align: center;
-  }
-
-  aside img #my-avatar {
-    flex: 10%;
-    width: 10%;
-    height: 10%;
-    border-radius: 50%;
-    float: left;
-    shape-outside: circle();
-  }         
+  }       
 
   main {
     display: flex;
