@@ -9,19 +9,9 @@
   }
   
   body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     min-height: 100vh;
-  }
-
-  body a {
-    text-decoration: none;
-    color: var(--maintheme-color);
-  }
-
-  body a:visited {
-    text-decoration: underline;
-    color: var(--maintheme-color);
   }
 
   header {
@@ -57,6 +47,16 @@
     padding: 1%;
   }
 
+  nav a {
+    text-decoration: none;
+    color: var(--maintheme-color);
+  }
+
+  nav a:visited {
+    text-decoration: underline;
+    color: var(--maintheme-color);
+  }
+
   .hero-image {
     height: 500px;
     width: 100%;
@@ -81,20 +81,25 @@
 
   aside h2 {
     flex-direction: column;
+    width: 100%;
     text-align: center;
     color: var(--maintheme-color);
     text-decoration: underline solid var(--secondarytheme-color);
   }
 
   aside p {
+    flex-wrap: wrap;
     text-align: center;
   }
 
-  aside img {
+  aside img #my-avatar {
+    flex: 10%;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
     float: left;
-    width: 25%;
-    object-fit: cover;
-  }
+    shape-outside: circle();
+  }         
 
   main {
     display: flex;
@@ -153,13 +158,14 @@
     color: var(--thirdtheme-color);
     text-align: center;
     font-weight: bolder;
-    margin-bottom: 0.25%;
+    padding-top: 1%;
+    margin: 0;
   }
 
   footer ul {
     text-align: center;
     list-style: none;
-    margin: 2% 2% 2% 0;
+    margin: 0% 2% 2% 0;
   }
 
   footer ul li {
@@ -169,14 +175,24 @@
     padding-bottom: 1%;
   }
 
-  @media screen and (max-width: 992px) {
-   #card {
+  Footer a {
+    text-decoration: none;
+    color: var(--secondarytheme-color);
+  }
+
+  footer a:visited {
+    text-decoration: underline;
+    color: var(--secondarytheme-color);
+  }
+
+@media screen and (max-width: 992px) {
+  body { 
       width: 50%
    }
   }
   
   @media screen and (max-width: 768px) {
-    #card {
+    body {
       width: 100%
     }
   }
