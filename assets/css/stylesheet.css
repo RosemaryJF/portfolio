@@ -141,14 +141,15 @@ header {
       
     }
     
-    
     .first-project {
       position: absolute;
       left: 40%;
       bottom: 50%;
       margin-bottom: .25%;
       background-image: url("../images/digital-marketing-meeting.jpg");
-      background-size: cover;
+      height: 75%;
+      width: 40%;
+      background-size: contain;
     }
   
   footer {
