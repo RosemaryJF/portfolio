@@ -6,40 +6,38 @@
 
 * {
   box-sizing: border-box;
-  }
+}
   
 body {
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   min-height: 100vh;
-  }
+}
 
-  header {
-    background-color: var(--maintheme-color);
-    height: 12rem;
-    position: relative;
-  }
+header {
+  background-color: var(--maintheme-color);
+  height: 150px;
+}
 
   header h1 {
     color: var(--thirdtheme-color);
     padding: 1%;
     margin: 1% 0 0 0;
+    position: relative;
   }
 
   header .container  {
     background-image: url("../images/my-photo-spain.png");
     border-radius: 50%;
-    height: 10rem;
-    width: 10rem;
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    flex-shrink: 1;
     position: absolute;
-    top: 7%;
-    left: 75%;
-    
+    top: 3%;
+    left: 80%;
   }  
-
-  header .clearfix {
-    overflow: auto;
-  }
 
   nav {
     background-color: var(--secondarytheme-color);
@@ -83,7 +81,6 @@ body {
     flex: 30%;
   }
   aside section {
-      display: flex;
       flex-wrap: wrap;
       width: 50%;
       background-color: var(--thirdtheme-color);
@@ -193,13 +190,28 @@ body {
 
 @media screen and (max-width: 992px) {
   body { 
-      width: 50%
+    width: 100%;
    }
   }
   
-  @media screen and (max-width: 768px) {
-    body {
-      width: 100%
-    }
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
   }
+  aside section {
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  body {
+    width: 100%;
+  }
+  aside section {
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
   
