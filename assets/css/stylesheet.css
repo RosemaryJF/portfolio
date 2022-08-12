@@ -16,15 +16,17 @@ body {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
   background-color: var(--maintheme-color);
   height: 150px;
+  margin: 0;
 }
 
   header h1 {
     color: var(--thirdtheme-color);
     padding: 1%;
-    margin: 1% 0 0 0;
-    position: relative;
+    margin: 0;
   }
 
   header .container  {
@@ -32,11 +34,9 @@ header {
     border-radius: 50%;
     height: 8rem;
     width: 8rem;
-    display: flex;
-    flex-shrink: 1;
     position: absolute;
-    top: 3%;
-    left: 80%;
+    left: 90%;
+    top: 2%
   }  
 
   nav {
@@ -69,7 +69,7 @@ header {
   }
 
   .hero-image {
-    height: 500px;
+    height: 30rem;
     width: 100%;
     margin-bottom: .25%;
     background-image: url("../images/SpainLove.png");
@@ -104,18 +104,20 @@ header {
 
   main {
     display: flex;
-    width: 100%;       
-    height: 100rem;
+    flex: 1 0 100%;
+    justify-content: center;
+    width: 96%;      
+    height: auto;
     background-color: var(--thirdtheme-color);
+    margin: 0;
     padding: 20px;
     border: 10px solid #487063;
-    margin: 0;
     color: var(--maintheme-color);
     position: relative;
     }
 
     main h2 {
-      flex: 50%;
+      flex: 0 0 100%;
       justify-content: center;
       text-align: center;
       text-decoration: underline var(--secondarytheme-color);
@@ -123,76 +125,68 @@ header {
       padding-bottom: .25%;
     }
 
-    main p {
-      
-    }
-
     main h3 {
       background-color: #f6f7eb;
       color: var(--maintheme-color);
       width: fit-content;
       position: inherit;
-      top: 75%;
+      top: 10px;
       left: 10px;
       border-radius: 10rem;
       padding: 2%;
+    }
+
+    main p {
+      text-align: center;
+      color: var(--maintheme-color);
     }
 
     main a:visited {
       text-decoration: underline;
       color: var(--secondarytheme-color);
     }
-  
+
+    div .card {
+      display: flex;
+      flex-direction: row;
+      flex: 0 0 50%;
+      margin: 0;
+    }
     
     #first-project {
-      position: absolute;
-      left: 32.5%;
       background-image: url("../images/digital-marketing-meeting.jpg");
-      height: 20rem;
-      width: 30rem;
+      height: 30rem;
+      width: 50rem;
       border-radius: 10%;
-      flex-shrink: inherit;
     }
 
+
     #second-project {
-      position: absolute;
-      top: 50%;
-      left: 32.5%;
       background-image: url("../images/Bengal.jpg");
       height: 20rem;
       width: 30rem;
       border-radius: 10%;
-      flex-shrink: inherit;
     }
 
     #third-project {
-      position: absolute;
-      left: 32.5%;
       background-image: url("../images/spain_dog.jpg");
       height: 20rem;
       width: 30rem;
       border-radius: 10%;
-      flex-shrink: inherit;
     }
 
     #fourth-project {
-      position: absolute;
-      left: 32.5%;
       background-image: url("../images/obi.jpg");
       height: 20rem;
       width: 30rem;
       border-radius: 10%;
-      flex-shrink: inherit;
     }
 
     #fifth-project {
-      position: absolute;
-      left: 32.5%;
       background-image: url("../images/Sook.jpg");
-      height: auto;
-      width: 100%;
+      height: 20rem;
+      width: 30rem;
       border-radius: 10%;
-      flex-shrink: inherit;
     }
   
   footer {
@@ -247,10 +241,6 @@ header {
     width: 100%;
   }
 }
-
-  @media (-webkit-min-device-pixel-ratio: 4), (min-resolution: 192dpi) {
-    /* High density stuff here */
-  }
 
 
 @media screen and (max-width: 567px) {
