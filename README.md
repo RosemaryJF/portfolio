@@ -1,6 +1,6 @@
 # portfolio
 
-# <Your-Project-Title>
+# My Portfolio
 
 ## Description
 
@@ -10,6 +10,16 @@ Provide a short description explaining the what, why, and how of your project. U
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
 - What problem does it solve?
 - What did you learn?
+
+This is the beginning of the work on my professional portfolio. My motivation was to provide a point of reference for future employers in which they can review my work from one area, from this central point they can then be directed to other works of mine. 
+
+It solves the problem of not having a professional portfolio.
+
+I learnt a lot, as I began to wrap my head around Flexbox, margins and different sized screen needs. 
+
+I feel I still have a lot to learn and this portfolio will be a continual work in progress. I had a design/look/feel in mind at the beginning, but upon completion I'm not happy with. So at a later date I will be coming back to this to rework the look and feel of the deployed site.
+
+Let it be noted that 4 out 5 project links lead to my home Github page and are titled coming soon. These will be updated as I work on more sites and apps. For now there are place holder images of various animals I have met at the crag - hopefully they provide people with a bit of an "Awww" moment to distract from the lack of work at this stage. 
 
 ## Table of Contents (Optional)
 
