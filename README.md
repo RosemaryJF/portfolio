@@ -1,7 +1,6 @@
 # portfolio
 
 # My Portfolio
-
 ---
 
 ## Description
@@ -24,7 +23,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits & Resources](#credits/resources)
+- [Credits & Resources](#credits & resources)
 - [License](#license)
 
 ---
@@ -61,7 +60,9 @@ To view my deployed portfolio visit the link below:
 
 [Insert Link](Insert Link)
 
-## Credits/Resources
+---
+
+## Credits & Resources
 
 I used the following sites to help inform/educate myself about how to do various aspects of my portfolio. This list is not extensive but covers the main ones used.
 
@@ -83,35 +84,25 @@ I went with a simple MIT license for my portfolio. It can be found at my GitHub 
 
 * [https://github.com/RosemaryJF/portfolio/blob/main/LICENSE](https://github.com/RosemaryJF/portfolio/blob/main/LICENSE)
 
-
 ---
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+## Resolved Issues
 
-## Badges
+The main issue I ran into in the development of my portfolio was the placement for the image of myself. The code I was trying to use can be found pasted below:
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+    aside img {
+      float: left;
+      width: 25%;
+      object-fit: inline;
+    }
 
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+I originally had it placed in my about me but changed my mind to include in my header. I renamed the element in my HTML, gave header box a relative position and used the below code to place it where I wanted:
 
-## Features
+    header .container  {
+      position: absolute;
+      left: 90%;
+      top: 2%;
+      margin: 0 -17%;
+    }
 
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
-
-RESOURCES:
-
-
-ISSUE CODE:
-  aside img {
-    float: left;
-    width: 25%;
-    object-fit: inline;
-  }
+This code requires further work as to make the image work on multiple screens. I had to choose a placement that worked for them all rather than it changing dynamically as required.
