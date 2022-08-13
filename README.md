@@ -2,6 +2,8 @@
 
 # My Portfolio
 
+---
+
 ## Description
 
 This is the beginning of the work on my professional portfolio. My motivation was to provide a point of reference for future employers in which they can review my work from one area, from this central point they can then be directed to other works of mine. 
@@ -14,46 +16,73 @@ I feel I still have a lot to learn and this portfolio will be a continual work i
 
 Let it be noted that 4 out 5 project links lead to my home Github page and are titled coming soon. These will be updated as I work on more sites and apps. For now there are place holder images of various animals I have met at the crag - hopefully they provide people with a bit of an "Awww" moment to distract from the lack of work at this stage. 
 
+---
+
 ## Table of Contents (Optional)
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Credits & Resources](#credits/resources)
 - [License](#license)
+
+---
 
 ## Installation
 
 There are no specific steps required to launch my portfolio as this stage. 
 
-Will work (hopefully) fine on most browsers and screen sizes. 
+Will work fine on all browsers and (hopefully) most screen sizes. 
 
 *There is a margin glitch at the smallest size which I am still to resolve*
 
+---
+
 ## Usage
 
+I implemented a couple of new things and a couple of done before things. My images/examples will work from page top to bottom:
 
+![Screenshot of Nav Bar](./assets/images/link-example.jpg)
 
-Provide instructions and examples for use. Include screenshots as needed.
+When you click on the navigation links you are taken to the relevant page placement.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+![Screenshot of hover actions on project cards](./assets/images/hover-example.jpg)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+When the user hovers over any of the project cards the card will have a inset glow of white. When the user further hovers over the project title link this will glow inset with one of the page theme colours.
 
-## Credits
+![Screenshot of Contact information](./assets/images/contact-example.jpg)
 
-List your collaborators, if any, with links to their GitHub profiles.
+Each contact information has an action built in. If the user wants to email me they can simply click on the email address and they will be taken to their relevant mail server. 
+For phone a phone box will appear.
+The GitHub link takes the user to my GitHub homepage.
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+To view my deployed portfolio visit the link below:
 
-If you followed tutorials, include links to those here as well.
+[Insert Link](Insert Link)
+
+## Credits/Resources
+
+I used the following sites to help inform/educate myself about how to do various aspects of my portfolio. This list is not extensive but covers the main ones used.
+
+* [https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number](https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number)
+* [https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/](https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/)
+* [https://developer.mozilla.org/en-US/docs/Web/CSS/background-image](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image)
+* [https://www.w3schools.com/howto/howto_css_hero_image.asp](https://www.w3schools.com/howto/howto_css_hero_image.asp)
+* [https://www.w3schools.com/cssref/css3_pr_background.asp](https://www.w3schools.com/cssref/css3_pr_background.asp)
+
+The below link is what I used to decide my page colour theme:
+
+* [https://coolors.co/](https://coolors.co/)
+
+--- 
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+I went with a simple MIT license for my portfolio. It can be found at my GitHub Repo. You can also access the lincense via the link below:
+
+* [https://github.com/RosemaryJF/portfolio/blob/main/LICENSE](https://github.com/RosemaryJF/portfolio/blob/main/LICENSE)
+
 
 ---
 
@@ -78,12 +107,7 @@ If you created an application or package and would like other developers to cont
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
 RESOURCES:
-https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number
-https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/
-https://coolors.co/f6f7eb-487063-eac099-985534-290012
-https://developer.mozilla.org/en-US/docs/Web/CSS/background-image
-https://www.w3schools.com/howto/howto_css_hero_image.asp
-https://www.w3schools.com/cssref/css3_pr_background.asp
+
 
 ISSUE CODE:
   aside img {
