@@ -1,3 +1,4 @@
+/*Lays*/
 :root {
  --maintheme-color: #290012;
  --secondarytheme-color: #985534;
@@ -12,16 +13,16 @@ body {
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  min-height: 100vh;
+
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--maintheme-color);
-  height: 150px;
-  margin: 0;
-}
+  header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--maintheme-color);
+    height: 150px;
+    margin: 0;
+  }
 
   header h1 {
     color: var(--thirdtheme-color);
@@ -36,7 +37,8 @@ header {
     width: 8rem;
     position: absolute;
     left: 90%;
-    top: 2%
+    top: 2%;
+    margin: 0 -17%;
   }  
 
   nav {
@@ -46,7 +48,6 @@ header {
   nav ul {
     color: var(--maintheme-color);
     text-align: right;
-    list-style: none;
     margin: 0;
   }
 
@@ -69,28 +70,100 @@ header {
   }
 
   .hero-image {
-    height: 30rem;
-    width: 100%;
-    margin-bottom: .25%;
     background-image: url("../images/SpainLove.png");
     background-size: cover;
     background-position: center;
-}
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 1%;
+  }
+  
+  main h2 {
+    flex: 0 0 100%;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline var(--secondarytheme-color);
+    font-weight: bold;
+    padding-bottom: .25%;
+  }
+
+  main section.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    background-color: var(--thirdtheme-color);
+    margin: 1% 2%;
+    border: 10px solid #487063;
+    color: var(--maintheme-color);
+  }
+
+  main h3 {
+    background-color: var(--thirdtheme-color);
+    color: var(--maintheme-color);
+    width: fit-content;
+    height: 2.5rem;
+    position: relative;
+    justify-content: left;
+    top: 0.25rem;
+    left: 1rem;
+    border-radius: 10rem;
+    padding: 2%;
+  }
+
+  main div p {
+    text-align: center;
+    color: var(--maintheme-color);
+  }
+
+  main a:visited {
+    text-decoration: underline;
+    color: var(--secondarytheme-color);
+  }
+  
+  #first-project {
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    height: 30rem;
+    width: 66%;
+    border-radius: 10%;
+    margin: 2%;
+  }
+
+  .project-card {
+    height: 20rem;
+    width: 23%;
+    border-radius: 10%;
+    margin: 1% 7%;
+  }
+
+  #second-project {
+    background-image: url("../images/Bengal.jpg");
+  }
+
+  #third-project {
+    background-image: url("../images/spain_dog.jpg");
+  }
+
+  #fourth-project {
+    background-image: url("../images/obi.jpg");
+  }
+
+  #fifth-project {
+    background-image: url("../images/Sook.jpg");
+  }
+
   aside {
     display: flex;
-    flex: 30%;
   }
+
   aside section {
-      flex-wrap: wrap;
       width: 50%;
       background-color: var(--thirdtheme-color);
       padding: 20px;
       border: 10px solid #487063;
-      margin: 2%;
+      margin: 1% 2%;
     }
 
   aside h2 {
-    flex-direction: column;
     width: 100%;
     text-align: center;
     color: var(--maintheme-color);
@@ -98,101 +171,19 @@ header {
   }
 
   aside p {
-    flex-wrap: wrap;
     text-align: center;
-  }       
+  }
 
-  main {
-    display: flex;
-    flex: 1 0 100%;
-    justify-content: center;
-    width: 96%;      
-    height: auto;
-    background-color: var(--thirdtheme-color);
-    margin: 0;
-    padding: 20px;
-    border: 10px solid #487063;
-    color: var(--maintheme-color);
-    position: relative;
-    }
-
-    main h2 {
-      flex: 0 0 100%;
-      justify-content: center;
-      text-align: center;
-      text-decoration: underline var(--secondarytheme-color);
-      font-weight: bold;
-      padding-bottom: .25%;
-    }
-
-    main h3 {
-      background-color: #f6f7eb;
-      color: var(--maintheme-color);
-      width: fit-content;
-      position: inherit;
-      top: 10px;
-      left: 10px;
-      border-radius: 10rem;
-      padding: 2%;
-    }
-
-    main p {
-      text-align: center;
-      color: var(--maintheme-color);
-    }
-
-    main a:visited {
-      text-decoration: underline;
-      color: var(--secondarytheme-color);
-    }
-
-    div .card {
-      display: flex;
-      flex-direction: row;
-      flex: 0 0 50%;
-      margin: 0;
-    }
-    
-    #first-project {
-      background-image: url("../images/digital-marketing-meeting.jpg");
-      height: 30rem;
-      width: 50rem;
-      border-radius: 10%;
-    }
-
-
-    #second-project {
-      background-image: url("../images/Bengal.jpg");
-      height: 20rem;
-      width: 30rem;
-      border-radius: 10%;
-    }
-
-    #third-project {
-      background-image: url("../images/spain_dog.jpg");
-      height: 20rem;
-      width: 30rem;
-      border-radius: 10%;
-    }
-
-    #fourth-project {
-      background-image: url("../images/obi.jpg");
-      height: 20rem;
-      width: 30rem;
-      border-radius: 10%;
-    }
-
-    #fifth-project {
-      background-image: url("../images/Sook.jpg");
-      height: 20rem;
-      width: 30rem;
-      border-radius: 10%;
-    }
+  aside a:visited {
+    text-decoration: underline;
+    color: var(--secondarytheme-color);
+  }
   
   footer {
     background-color: var(--maintheme-color);
-    height: 40%;
+    height: 12rem;
     border-top: 10px solid var(--secondarytheme-color);
+    margin: 1rem 0 0 0;
   }
 
   footer h2 {
@@ -216,7 +207,7 @@ header {
     padding-bottom: 1%;
   }
 
-  Footer a {
+  footer a {
     text-decoration: none;
     color: var(--secondarytheme-color);
   }
@@ -228,36 +219,41 @@ header {
 
 @media screen and (max-width: 992px) {
   body { 
-    width: 100%;
+    max-width: 100%;
    }
+
+  .project-card {
+    width: 35%;
   }
-  
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    /* High density stuff here */
-  }
+}
 
 @media screen and (max-width: 768px) {
   body {
-    width: 100%;
+    max-width: 96%;
+  }
+
+  .project-card {
+    width: 45%;
+  }
+
+  #first-project {
+    width: 90%;
   }
 }
 
 
 @media screen and (max-width: 567px) {
-  body {
-    width: 100%;
-  }
   aside section {
     justify-content: flex-start;
     width: 100%;
   }
 
-  main section {
-    width: 100%;
+  .project-card {
+    width: 45%;
   }
 
-}
+  #first-project {
+    width: 90%;
+  }
 
-@media (-webkit-min-device-pixel-ratio: 4), (min-resolution: 192dpi) {
-  /* High density stuff here */
 }
