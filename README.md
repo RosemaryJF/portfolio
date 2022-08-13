@@ -58,7 +58,7 @@ The GitHub link takes the user to my GitHub homepage.
 
 To view my deployed portfolio visit the link below:
 
-[Insert Link](Insert Link)
+[ https://rosemaryjf.github.io/portfolio/]( https://rosemaryjf.github.io/portfolio/)
 
 ---
 
@@ -82,7 +82,7 @@ The below link is what I used to decide my page colour theme:
 
 I went with a simple MIT license for my portfolio. It can be found at my GitHub Repo. You can also access the lincense via the link below:
 
-* [https://github.com/RosemaryJF/portfolio/blob/main/LICENSE](https://github.com/RosemaryJF/portfolio/blob/main/LICENSE)
+* [https://github.com/RosemaryJF/portfolio/blob/main/assets/LICENSE](https://github.com/RosemaryJF/portfolio/blob/main/assets/LICENSE)
 
 ---
 
